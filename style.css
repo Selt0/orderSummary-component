@@ -1,0 +1,73 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body {
+  background-image: image-set(
+    url("./images/pattern-background-desktop.svg") 2x,
+    url("./images/pattern-background-mobile.svg") 1x
+    );
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0e8ff;
+}
+
+p {
+  font-size: 16px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-image:first-child img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+h1.title {
+  font-weight: 900;
+}
+
+p.title {
+  font-weight: 700;
+}
+
+#underline {
+  text-decoration: underline;
+  color: #3829e0;
+}
+
+#underline:hover {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #3829e0;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 2em;
+  box-shadow: 0px 15px 12px 0px #d7d3ff;
+}
+
+.button:hover {
+  background-color: #766cf1;
+  color: #fff;
+}
+
+#cancel {
+  color: #7b889b;
+}
+
+#cancel:hover {
+  color: #1d254a
+}
+  @media screen and (min-width: 1216px){
+    .column.is-offset-4-widescreen {
+      margin-left: 37.5%;
+    }
+  }
